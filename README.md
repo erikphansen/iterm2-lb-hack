@@ -1,6 +1,6 @@
-# iTerm 2 LaunchBar Fix
+# iTerm2 LaunchBar Fix
 
-If you are running the iTerm 2 v3 beta and have set iTerm 2 as your preferred terminal application in LaunchBar's preferences, you may have noticed that LaunchBar's terminal commands will not work. For example, selecting a path in LaunchBar and then choosing the `Open Terminal Here` command (or simply hitting ⌘T), fails silently. Read more [here](https://gitlab.com/gnachman/iterm2/issues/4447) or check out [this Twitter conversation](https://twitter.com/launchbar/status/620975715278790657).
+If you are running the iTerm2 v3 beta and have set iTerm as your preferred terminal application in LaunchBar's preferences, you may have noticed that LaunchBar's terminal commands will not work. For example, selecting a path in LaunchBar and then choosing the `Open Terminal Here` command (or simply hitting ⌘T), fails silently. Read more [here](https://gitlab.com/gnachman/iterm2/issues/4447) or check out [this Twitter conversation](https://twitter.com/launchbar/status/620975715278790657).
 
 This project is my hack to fix things. It uses Karabiner to hijack the ⌘T keystroke when LaunchBar is active. Installation is a little bit involved and assumes you are comfortable with the command line. If you'd prefer to just install a LaunchBar Action that adds commands to open a path in a new iTerm window or tab, but *does not* make the ⌘T shortcut work, [I've got you covered](https://github.com/eirkeirkeirk/iterm-launchbar-actions).
 

@@ -1,0 +1,21 @@
+<!--
+Place these two XML nodes within the main `<root>` node of
+Karabiner's `private.xml` file.
+-->
+<vkopenurldef>
+  <name>KeyCode::VK_OPEN_URL_SHELL_open_path_in_iterm</name>
+  <url type="shell">
+    <![CDATA[osascript /usr/local/bin/new-iterm-tab.applescript]]>
+  </url>
+</vkopenurldef>
+<item>
+  <name>⌘T to open path in new iTerm tab</name>
+  <identifier>private.command_t_in_launchbar</identifier>
+  <only>LAUNCHBAR</only>
+  <autogen>
+    --KeyToKey--
+    KeyCode::T, VK_COMMAND,
+    KeyCode::C, ModifierFlag::COMMAND_L,
+    KeyCode::VK_OPEN_URL_SHELL_open_path_in_iterm,
+  </autogen>
+</item>

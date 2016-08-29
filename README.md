@@ -18,7 +18,7 @@ $ ln -s ~/projects/iterm2-lb-hack/new-iterm-tab.applescript /usr/local/bin
 
 I'm assuming you have [Karabiner](https://pqrs.org/osx/karabiner/) installed. If not, you'll want to do that first.
 
-First, you'll need to enable the `Open LaunchBar By Command-Space` option. It's highlighted in orange so it's hard to miss. But you might want to use the search function to narrow down the massive list of options built into Karabiner. It this option is not turned on, Karabiner won't be able to tell when LaunchBar is the active app.
+First, you'll need to enable the `Open LaunchBar By Command-Space` option. It's highlighted in orange so it's hard to miss. But you might want to use the search function to narrow down the massive list of options built into Karabiner. If this option is not turned on, Karabiner won't be able to tell when LaunchBar is the active app.
 
 ![](./screenshots/karabiner-lb.png)
 

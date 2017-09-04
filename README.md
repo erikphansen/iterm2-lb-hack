@@ -1,4 +1,8 @@
-# iTerm2 LaunchBar Fix
+# INACTIVE - iTerm2 LaunchBar Fix
+
+---
+#### iTerm 2 v3 fixed the bug this worked around and Karabiner does not work with macOS 10.12 or later. For both of these reasons this hack is no longer needed[^1].
+---
 
 If you are running the iTerm2 v3 beta and have set iTerm as your preferred terminal application in LaunchBar's preferences, you may have noticed that LaunchBar's terminal commands will not work. For example, selecting a path in LaunchBar and then choosing the `Open Terminal Here` command (or simply hitting ⌘T), fails silently. Read more [here](https://gitlab.com/gnachman/iterm2/issues/4447) or check out [this Twitter conversation](https://twitter.com/launchbar/status/620975715278790657).
 
@@ -10,7 +14,7 @@ This project is my hack to fix things. It uses Karabiner to hijack the ⌘T keys
 
 First, install the included `new-iterm-tab.applescript` file. It needs to live in `/usr/local/bin/` so you can either copy it there or symlink it from the project directory to `/usr/local/bin/`. Here's a starting point for the command to make the symlink:
 
-```bash
+```sh
 $ ln -s ~/projects/iterm2-lb-hack/new-iterm-tab.applescript /usr/local/bin
 ```
 
@@ -60,3 +64,5 @@ With that, setup is complete.
 ## Usage
 
 In LaunchBar, navigate to a folder. Hit ⌘T. iTerm will activate and `cd` you into the folder. Just like it should.
+
+[^1]: Although I do really wish that LaunchBar had the option for ⌘T to open a new iTerm tab rather than a new window.
